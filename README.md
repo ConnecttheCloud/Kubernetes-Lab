@@ -5,7 +5,10 @@ This is my lab practise and you can view details contents in https://clouddays.i
 
 ## Installation and K8 cluster setup in GCloud
 
-Subscribe GCloud as free subscription and create 2VMs for master and worker node. 
+Subscribe GCloud as free subscription and create 2VMs for K8 master and worker node. 
+
+This lab is using G Cloud free tier subscribtions.
+
 
 ### Create VMs
 
@@ -47,5 +50,31 @@ g compute instances list
 g compute ssh master
 
 
+## K8 Cluster Installation
+
+Launch Powershell to access master
+```
+g compute ssh master
+sudo -i
+
+curl -s 
 
 
+-------------------------------------------------------------------
+
+g computer ssh worker1
+
+sudo -i
+
+curl -s
+```
+
+
+
+
+
+## Open FW ports for NodePort SVC
+
+```
+gcloud compute firewall-rules create nodeports --allow tcp:30000-40000
+```
