@@ -48,7 +48,7 @@ g config set project <project_name>
 # SSH into VMs from GCLI
 g compute instances list
 g compute ssh master
-
+```
 
 ## K8 Cluster Installation
 
@@ -59,7 +59,6 @@ sudo -i
 uname -mov
 curl -sS https://raw.githubusercontent.com/ConnecttheCloud/Kubernetes-Lab/main/Config/cluster-setup/install_master.sh | bash
 
-
 -------------------------------------------------------------------
 
 g compute ssh worker1
@@ -67,16 +66,14 @@ g compute ssh worker1
 sudo -i
 uname -mov
 curl -sS https://raw.githubusercontent.com/ConnecttheCloud/Kubernetes-Lab/main/Config/cluster-setup/install_worker.sh | bash
+
 ```
-
-
-
-
 
 ## Open FW ports for NodePort SVC
 
 ```
 gcloud compute firewall-rules create nodeports --allow tcp:30000-40000
+
 ```
 
 After installation done on master, type `kubeadm token create --print-join-command --ttl 0` this command will show the command output for joining worker node to cluster.
