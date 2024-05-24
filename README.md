@@ -56,17 +56,17 @@ Launch Powershell to access master
 ```
 g compute ssh master
 sudo -i
-
-curl -s 
+uname -mov
+curl -sS https://raw.githubusercontent.com/ConnecttheCloud/Kubernetes-Lab/main/Config/cluster-setup/install_master.sh | bash
 
 
 -------------------------------------------------------------------
 
-g computer ssh worker1
+g compute ssh worker1
 
 sudo -i
-
-curl -s
+uname -mov
+curl -sS https://raw.githubusercontent.com/ConnecttheCloud/Kubernetes-Lab/main/Config/cluster-setup/install_worker.sh | bash
 ```
 
 
@@ -78,3 +78,7 @@ curl -s
 ```
 gcloud compute firewall-rules create nodeports --allow tcp:30000-40000
 ```
+
+After installation done on master, type `kubeadm token create --print-join-command --ttl 0` this command will show the command output for joining worker node to cluster.
+
+`kubectl get nodes`
