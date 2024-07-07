@@ -23,7 +23,7 @@ This is the introduction
 
 
 
-![screenshot](Installation/images/image.png)
+![screenshot](https://github.com/ConnecttheCloud/Kubernetes-Lab/blob/main/images/image.png)
 
 `sfsfs
 sfdsfs
