@@ -26,7 +26,7 @@ This is the introduction
 ![screenshot](https://github.com/ConnecttheCloud/Kubernetes-Lab/blob/main/images/image.png)
 
 Second image
-![alt text]([image-1.png](https://github.com/ConnecttheCloud/Kubernetes-Lab/blob/main/images/image-1.png))
+![alt text](https://github.com/ConnecttheCloud/Kubernetes-Lab/blob/main/images/image-1.png))
 
 `sfsfs
 sfdsfs
