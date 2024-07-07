@@ -42,3 +42,11 @@ dsf
 sdf
 sfs
 ```
+
+`````
+this is the command
+cluster stop
+cluster status
+sudo shutdown -P now
+`````
+
